@@ -1,0 +1,53 @@
+﻿name: notes_bridge
+publish_to: none
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_riverpod: ^2.6.1
+  drift: ^2.25.1
+  sqlite3_flutter_libs: ^0.5.30
+  path_provider: ^2.1.5
+  path: ^1.9.0
+  dio: ^5.8.0
+  web_socket_channel: ^3.0.3
+  flutter_local_notifications: ^19.2.1
+  timezone: ^0.10.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.5.4
+  drift_dev: ^2.25.2
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  remove_alpha_ios: true
+  image_path: "assets/branding/logo.jpg"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/branding/logo.jpg"
+  web:
+    generate: false
+  windows:
+    generate: true
+    image_path: "assets/branding/logo.jpg"
+    icon_size: 256
+  macos:
+    generate: false
+
+hooks:
+  user_defines:
+    sqlite3:
+      source: system
+      name_windows: winsqlite3

@@ -1,0 +1,29 @@
+﻿# Root
+.env
+.env.*
+!.env.example
+*.log
+
+# Node
+node_modules/
+server/node_modules/
+server/dist/
+server/data/
+
+# Flutter / Dart
+**/.dart_tool/
+**/.flutter-plugins-dependencies
+**/build/
+
+# Android / Gradle
+**/.gradle/
+**/.kotlin/
+**/android/local.properties
+**/.gradle-user-home/
+
+# IDE / OS
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
