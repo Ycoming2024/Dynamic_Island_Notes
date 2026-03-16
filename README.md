@@ -1,66 +1,20 @@
-﻿# Notes Bridge (Open Source Edition)
+﻿# Notes Bridge
 
-Cross-platform notes/reminders app with a Flutter client and NestJS backend.
+A cross-platform notes and reminders project with a Flutter client and NestJS backend.
 
-## Project Structure
+## Language
 
-- `apps/flutter_app`: Flutter app (Windows + Android)
-- `server`: NestJS API (SQLite/Prisma)
-- `docs`: schema and setup notes
-- `run_build_windows.bat`: one-click Windows desktop build
-- `run_android_apk.bat`: one-click Android APK build
+- English: [README.en-US.md](README.en-US.md)
+- 简体中文: [README.zh-CN.md](README.zh-CN.md)
+- Espanol: [README.es-ES.md](README.es-ES.md)
 
-## Privacy-Safe Open Source Export
+## Quick Links
 
-This export intentionally removes personal deployment details:
-
-- No private `.env`
-- No runtime databases/logs/build caches
-- Domain/app branding replaced with generic placeholders (`https://example.com`)
-
-## Quick Start
-
-### 1) Backend
-
-```bash
-cd server
-cp .env.example .env
-npm ci
-npx prisma generate
-npm run build
-npm run start:prod
-```
-
-Default API: `http://127.0.0.1:3000/v1`
-
-### 2) Flutter app
-
-```bash
-cd apps/flutter_app
-flutter pub get
-flutter run -d windows --dart-define=API_BASE_URL=http://127.0.0.1:3000 --dart-define=API_PREFIX=/v1
-```
-
-Android example:
-
-```bash
-flutter run -d android --dart-define=API_BASE_URL=http://10.0.2.2:3000 --dart-define=API_PREFIX=/v1
-```
-
-## Build Scripts
-
-At repository root:
-
-- Windows: `run_build_windows.bat`
-- Android APK: `run_android_apk.bat`
-
-Both scripts use:
-
-- `API_BASE_URL` default: `https://example.com`
-- `API_PREFIX` default: `/v1`
-
-Adjust them in the script file if needed.
+- Flutter app: `apps/flutter_app`
+- Backend API: `server`
+- Build Windows app: `run_build_windows.bat`
+- Build Android APK: `run_android_apk.bat`
 
 ## License
 
-Add your preferred open-source license file before publishing.
+MIT. See [LICENSE](LICENSE).
