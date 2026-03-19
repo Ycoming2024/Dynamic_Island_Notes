@@ -2,8 +2,8 @@
 
 A cross-platform notes and reminders project with a Flutter client and NestJS backend.
 
-![image](https://github.com/Ycoming2024/Dynamic_Island_Notes/blob/main/gif/git_mouse.gif)
-![image](https://github.com/Ycoming2024/Dynamic_Island_Notes/blob/main/gif/git_remider.gif)
+![image](https://github.com/Ycoming2024/Dynamic_Island_Notes/blob/main/gif/git_mouse.gif) ![image](https://github.com/Ycoming2024/Dynamic_Island_Notes/blob/main/gif/git_remider.gif)
+
 
 ## Language
 
